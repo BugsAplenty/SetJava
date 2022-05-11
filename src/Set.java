@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.Random;
+
 public class Set<T> {
     private final ArrayList<T> values;
     public Set() {
@@ -67,5 +69,9 @@ public class Set<T> {
         }
         setStringBuilder.append("}");
         return setStringBuilder.toString();
+    }
+    public T getRandom() {
+        Random random = new Random();
+        return values.get(random.nextInt(values.size()));
     }
 }

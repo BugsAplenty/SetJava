@@ -16,7 +16,6 @@ public class SetDemo {
         System.out.println(set1.toString());
         System.out.println(set2.toString());
         System.out.println(set3.toString());
-
         // Step 2 - Display union of set 1 with set 2:
         System.out.println("--- Display union of set 1 with set 2: ---");
         Set<Integer> union = set1.union(set2);
